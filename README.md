@@ -15,9 +15,8 @@ Antes de comenzar, asegúrate de tener instalados los siguientes componentes:
 1. **Git** - Para clonar el repositorio.
 2. **PHP 8.2+** - Requerido para Laravel 11.
 3. **Composer** - Gestor de dependencias de PHP.
-4. **Node.js y npm** - Para manejar las dependencias de frontend.
-5. **Base de datos** (SQLite) - Configurada según tus necesidades.
-6. **Conocimientos básicos de Laravel** - Para entender la estructura del proyecto.
+4. **Base de datos** - Opcional SQLiteStudio.
+5. **Conocimientos básicos de Laravel** - Para entender la estructura del proyecto.
 
 ---
 
@@ -35,19 +34,16 @@ Sigue estos pasos para configurar el proyecto en tu máquina:
 3. **Instala las dependencias de PHP**:
     composer install
 
-4. **Instala las dependencias de Node.js**:
-    npm install
-
-5. **Configura el archivo .env**:
+4. **Configura el archivo .env**:
     Copia el archivo .env.example y renómbralo a .env.
 
-6. **Genera la clave de aplicación**:
+5. **Genera la clave de aplicación**:
     php artisan key:generate
 
-7. **Ejecuta las migraciones**:
+6. **Ejecuta las migraciones**:
     php artisan migrate
 
-8. **Crea usuario admin**:
+7. **Crea usuario admin**:
     php artisan db:seed
 
 >[!NOTE]
@@ -62,4 +58,3 @@ Sigue estos pasos para configurar el proyecto en tu máquina:
     Este comando inicia el servidor de desarrollo
     php artisan serve
     Luego, abre tu navegador y visita http://localhost:8000 para ver la aplicación en funcionamiento.
-
